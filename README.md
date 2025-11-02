@@ -1,7 +1,5 @@
 # Stick Shift Simulator
 
-Welcome to the Stick Shift Simulator!
-
 ## Table of Contents
  [Introduction](#introduction)
  [Features](#features)
@@ -13,26 +11,26 @@ Welcome to the Stick Shift Simulator!
 
 The Stick Shift Simulator is a Python-based application that allows users to experience the mechanics of a manual transmission. The main script, `main.py`, handles the core functionality of the simulator.
 
-## Success Criteria
-1) The client can view live information that updates in realtime, such as engine RPM, speed and the current gear selected.  
+## Features
+1) Ability to view live information that updates in realtime, such as engine RPM, speed and the current gear selected.  
 
-2) The client can change gears by dragging and dropping an onscreen shifter to its desired 	position.  
+2) Ability to change gears by dragging and dropping an onscreen shifter to its desired 	position.  
 
-3) The client can set custom key binds for controls based on their preferences.  
+3) Ability to set custom key binds for controls based on their preferences.  
 
-4) The client can view a report highlighting a count of their mistakes, such as the number of times they stalled the engine.  
+4) Ability to view a report highlighting a count of their mistakes, such as the number of times they stalled the engine.  
 
-5) The client has access to a simple tutorial to use the program.  
+5) Ability to access a simple tutorial to use the program.  
 
-6) The client can view realtime telemetry data relating to the car.  
+6) Ability to view realtime telemetry data relating to the car.  
 
-7) The application can provide a visual indication of optimal times to shift gears.  
+7) Ability to provide a visual indication of optimal times to shift gears.  
 
-8) The application should be able to detect and prevent the user from selecting gears that are 	not present, such as negative gears, or gears above 6.  
+8) Ability to detect and prevent the user from selecting gears that are 	not present, such as negative gears, or gears above 6.  
 
-9) The application can simulate basic engine stalling if the user releases the clutch too quickly without enough throttle input, or if the vehicle stops and the gear is not set to neutral.  
+9) Ability to simulate basic engine stalling if the user releases the clutch too quickly without enough throttle input, or if the vehicle stops and the gear is not set to neutral.  
 
-10) The application simulates changing acceleration depending on the current RPM.  
+10) Ability to simulate changing acceleration depending on the current RPM.  
 
 11) The application prevents the user from changing gears if the clutch is not pressed.  
 
@@ -84,4 +82,5 @@ Threading
 pygame
 tkinter
 matplotlib
+
 
