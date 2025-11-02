@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The Stick Shift Simulator is a Python-based application that allows users to experience the mechanics of a manual transmission. The main script, `main.py`, handles the core functionality of the simulator.
+This Stick Shift Simulator is a Python-based application that allows users to experience the mechanics of a manual transmission. The main script, `main.py`, handles the core functionality of the simulator.
 
 ## Features
 1) Ability to view live information that updates in realtime, such as engine RPM, speed and the current gear selected.  
@@ -84,5 +84,6 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
