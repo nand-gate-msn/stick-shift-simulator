@@ -55,7 +55,7 @@ To get started with the Stick Shift Simulator, follow these steps:
     - The required .ttf files for the "Eroded Personal Use" and "JetBrains Mono" font styles can be found under `Source Code\Fonts`.
     - Install the .ttf files onto your system.
 
-## 🎮Usage🎮
+## 🎮 Usage 🎮
 
 To run the simulator, run the `main.py` script, either by pressing the Play button in Visual Studio Code or execute the following code in a dedicated terminal (ensure that the current working directory is correct):
 
@@ -84,6 +84,7 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
 
