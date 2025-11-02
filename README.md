@@ -67,6 +67,7 @@ Follow the onscreen instructions to interact with the simulator.
 
 ## Dependencies
 The following dependencies must be installed to run this program.
+```
 os
 sys
 time
@@ -82,5 +83,6 @@ Threading
 pygame
 tkinter
 matplotlib
+```
 
 
