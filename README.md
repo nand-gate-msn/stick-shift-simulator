@@ -38,7 +38,9 @@ This Stick Shift Simulator is a Python-based application that allows users to ex
 
 13) The application can produce engine audio whose frequency changes are based on the car’s RPM. 
 
-14) The application can model engine damage for different scenarios.  
+14) The application can model engine damage for different scenarios.
+
+Images showcasing the GUI will be added to this README file in the future.
 
 
 ## ⬇️ Installation ⬇️
@@ -84,6 +86,7 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
 
