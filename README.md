@@ -47,13 +47,15 @@ Images showcasing the GUI will be added to this README file in the future.
 
 To get started with the Stick Shift Simulator, follow these steps:
 
-1. Ensure that Python is installed on your system (`https://www.python.org/`). 
+1. Ensure that Python is installed on your system (`https://www.python.org/`).
 
-2. Install the required dependencies by executing this command (see [Dependencies](#dependencies)):
+2. After downloading the source code onto your local device, use your device's terminal program to navigate to the stick shift simulator directory.
+
+3. Install the required dependencies by executing this command (see [Dependencies](#dependencies)):
     ```bash
     pip install r requirements.txt
     ```
-3. Install the required font files
+4. Install the required font files
     - The required .ttf files for the "Eroded Personal Use" and "JetBrains Mono" font styles can be found under `Source Code\Fonts`.
     - Install the .ttf files onto your system.
 
@@ -86,6 +88,7 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
 
