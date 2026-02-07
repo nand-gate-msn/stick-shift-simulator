@@ -70,7 +70,7 @@ To get started with the Stick Shift Simulator, follow these steps:
 
 ## 🎮 Usage 🎮
 
-To run the simulator, run the `main.py` script, either by pressing the Play button in Visual Studio Code or execute the following code in a dedicated terminal (ensure that the current working directory is correct):
+To run the simulator, run the `main.py` script, either by pressing the Play button in Visual Studio Code (or equivalent in a different IDE) or execute the following code in a dedicated terminal (ensure that the current working directory is correct):
 
 ```bash
 python main.py
@@ -97,6 +97,7 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
 
