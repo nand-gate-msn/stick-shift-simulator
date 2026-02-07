@@ -1,6 +1,6 @@
 # 🚘 Stick Shift Simulator 🚘
 
-## Disclaimer ##
+## ❗Disclaimer❗ ##
 Being my first-ever large-scale project, this application has a few issues, including but not limited to:
 - Under-use of classes; main app is broken into functions for each screen, as opposed to treating it as a class.
 - Usage of global variables for properties such as the car's RPM, speed, etc. This will be fixed in a future update with better usage of OOP.
@@ -97,6 +97,7 @@ pygame
 tkinter
 matplotlib
 ```
+
 
 
 
