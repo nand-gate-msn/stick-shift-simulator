@@ -1,26 +1,26 @@
-# 🚘 Stick Shift Simulator 🚘
+# Stick Shift Simulator
 
-## ❗Disclaimer❗ ##
-Being my first-ever large-scale project, this application has a few issues, including but not limited to:
-- Under-use of classes; main app is broken into functions for each screen, as opposed to treating it as a class.
-- Usage of global variables for properties such as the car's RPM, speed, etc. This will be fixed in a future update with better usage of OOP.
-- Break statements used instead of flag variables in certain locations.
-- Lots of variables (including some global) that are a bit difficult to keep track of.
-- No delta time functionality, so the performance of this application _heavily depends on your system_ (for example, Mac users may see faster acceleration than some Windows users)
+## What I'd Improve With More Experience
+This was my first large-scale project, and revisiting it now I'd:
+- Refactor into proper OOP classes instead of function-per-screen
+- Reorganize the codebase to be more modular (i.e. individual pages in a separate folder, backend services stored separately, etc.)
+- Replace global state (RPM, speed) with encapsulated class attributes
+- Add delta-time-based physics for frame-rate independence
+- Replace break statements with flag-based control flow
 
 
-## 📚 Table of Contents 📚
+## Table of Contents
  [Introduction](#introduction)
  [Features](#features)
  [Installation](#installation)
  [Usage](#usage)
  [Dependencies](#dependencies)
 
-## 👋 Introduction 👋
+## Introduction
 
 This Stick Shift Simulator is a Python-based application that allows users to experience the mechanics of a manual transmission. The main script, `main.py`, handles the core functionality of the simulator.
 
-## ✨ Features ✨
+## Features
 1) Ability to view live information that updates in realtime, such as engine RPM, speed and the current gear selected.  
 
 2) Ability to change gears by dragging and dropping an onscreen shifter to its desired 	position.  
@@ -52,7 +52,7 @@ This Stick Shift Simulator is a Python-based application that allows users to ex
 Images showcasing the GUI will be added to this README file in the future.
 
 
-## ⬇️ Installation ⬇️
+## Installation
 
 To get started with the Stick Shift Simulator, follow these steps:
 
@@ -68,7 +68,7 @@ To get started with the Stick Shift Simulator, follow these steps:
     - The required .ttf files for the "Eroded Personal Use" and "JetBrains Mono" font styles can be found under `Source Code\Fonts`.
     - Install the .ttf files onto your system.
 
-## 🎮 Usage 🎮
+## Usage
 
 To run the simulator, run the `main.py` script, either by pressing the Play button in Visual Studio Code (or equivalent in a different IDE) or execute the following code in a dedicated terminal (ensure that the current working directory is correct):
 
@@ -78,7 +78,7 @@ python main.py
 
 Follow the onscreen instructions to interact with the simulator.
 
-## 🧑‍💻 Dependencies 🧑‍💻
+## Dependencies
 The following dependencies must be installed to run this program.
 ```
 os
