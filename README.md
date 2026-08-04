@@ -1,76 +1,59 @@
-# Stick Shift Simulator
+# 🚘 Stick Shift Simulator
+
+A Python-based simulator that models the mechanics of driving a manual transmission — real-time RPM/speed telemetry, drag-and-drop gear shifting, engine stalling logic, and live audio synced to engine RPM via PortAudio.
+
+## Table of Contents
+- [Features](#features)
+- [What I'd Improve With More Experience](#what-id-improve-with-more-experience)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+
+## Features
+
+**Core mechanics**
+- Realistic RPM increase rates based on throttle input, with changing acceleration depending on current RPM
+- Engine stalling simulation — triggered by releasing the clutch too quickly without enough throttle, or stopping without shifting to neutral
+- Gear-change lockout while the clutch is not pressed, and prevention of invalid gear selection (negative gears, gears above 6)
+- Basic engine damage modeling for different failure scenarios
+
+**Interface & feedback**
+- Drag-and-drop onscreen shifter for gear changes
+- Live telemetry: engine RPM, speed, and current gear, updating in real time
+- Visual indicator for optimal shift timing
+- Customizable key bindings
+- Built-in tutorial
+- Post-session report summarizing mistakes (e.g. stall count)
+
+**Audio**
+- Real-time engine audio with frequency that scales with RPM
+
+*Images showcasing the GUI will be added to this README in the future.*
 
 ## What I'd Improve With More Experience
-This was my first large-scale project, and revisiting it now I'd:
+
+This was my first large-scale project, and revisiting it now, I'd:
 - Refactor into proper OOP classes instead of function-per-screen
-- Reorganize the codebase to be more modular (i.e. individual pages in a separate folder, backend services stored separately, etc.)
+- Reorganize the codebase to be more modular (e.g. individual pages in a separate folder, backend services stored separately)
 - Replace global state (RPM, speed) with encapsulated class attributes
 - Add delta-time-based physics for frame-rate independence
 - Replace break statements with flag-based control flow
 
-
-## Table of Contents
- [Introduction](#introduction)
- [Features](#features)
- [Installation](#installation)
- [Usage](#usage)
- [Dependencies](#dependencies)
-
-## Introduction
-
-This Stick Shift Simulator is a Python-based application that allows users to experience the mechanics of a manual transmission. The main script, `main.py`, handles the core functionality of the simulator.
-
-## Features
-1) Ability to view live information that updates in realtime, such as engine RPM, speed and the current gear selected.  
-
-2) Ability to change gears by dragging and dropping an onscreen shifter to its desired 	position.  
-
-3) Ability to set custom key binds for controls based on their preferences.  
-
-4) Ability to view a report highlighting a count of their mistakes, such as the number of times they stalled the engine.  
-
-5) Ability to access a simple tutorial to use the program.  
-
-6) Ability to view realtime telemetry data relating to the car.  
-
-7) Ability to provide a visual indication of optimal times to shift gears.  
-
-8) Ability to detect and prevent the user from selecting gears that are 	not present, such as negative gears, or gears above 6.  
-
-9) Ability to simulate basic engine stalling if the user releases the clutch too quickly without enough throttle input, or if the vehicle stops and the gear is not set to neutral.  
-
-10) Ability to simulate changing acceleration depending on the current RPM.  
-
-11) The application prevents the user from changing gears if the clutch is not pressed.  
-
-12) The application simulates realistic RPM increase rates when the throttle is pressed. 
-
-13) The application can produce engine audio whose frequency changes are based on the car’s RPM. 
-
-14) The application can model engine damage for different scenarios.
-
-Images showcasing the GUI will be added to this README file in the future.
-
-
 ## Installation
 
-To get started with the Stick Shift Simulator, follow these steps:
-
-1. Ensure that Python is installed on your system (`https://www.python.org/`).
-
-2. After downloading the source code onto your local device, use your device's terminal program to navigate to the stick shift simulator directory.
-
-3. Install the required dependencies by executing this command (see [Dependencies](#dependencies)):
-    ```bash
-    pip install r requirements.txt
-    ```
-4. Install the required font files
-    - The required .ttf files for the "Eroded Personal Use" and "JetBrains Mono" font styles can be found under `Source Code\Fonts`.
-    - Install the .ttf files onto your system.
+1. Ensure Python is installed (`https://www.python.org/`).
+2. Download the source code and navigate to the Stick Shift Simulator directory in your terminal.
+3. Install dependencies (see [Dependencies](#dependencies)):
+```bash
+    pip install -r requirements.txt
+```
+4. Install the required fonts:
+    - The `.ttf` files for "Eroded Personal Use" and "JetBrains Mono" are located in `Source Code/Fonts`.
+    - Install them onto your system.
 
 ## Usage
 
-To run the simulator, run the `main.py` script, either by pressing the Play button in Visual Studio Code (or equivalent in a different IDE) or execute the following code in a dedicated terminal (ensure that the current working directory is correct):
+Run `main.py` — either via your IDE's run button or from a terminal (with the correct working directory):
 
 ```bash
 python main.py
@@ -79,7 +62,7 @@ python main.py
 Follow the onscreen instructions to interact with the simulator.
 
 ## Dependencies
-The following dependencies must be installed to run this program.
+
 ```
 os
 sys
@@ -91,20 +74,9 @@ reportlab
 pydub
 sounddevice
 numpy
-Pandas
-Threading
+pandas
+threading
 pygame
 tkinter
 matplotlib
 ```
-
-
-
-
-
-
-
-
-
-
-
