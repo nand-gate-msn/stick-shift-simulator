@@ -34,7 +34,7 @@ A Python-based simulator that models the mechanics of driving a manual transmiss
 
 This was my first large-scale project, and revisiting it now, I'd:
 - Refactor into proper OOP classes instead of function-per-screen
-- Reorganize the codebase to be more modular (e.g. individual pages in a separate folder, backend services stored separately)
+- Reorganize the codebase to be more modular (e.g. individual pages in a separate folder, backend services stored separately), along with better naming conventions (Source Code --> src)
 - Replace global state (RPM, speed) with encapsulated class attributes
 - Add delta-time-based physics for frame-rate independence
 - Replace break statements with flag-based control flow
